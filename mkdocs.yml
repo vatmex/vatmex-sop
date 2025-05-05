@@ -1,0 +1,66 @@
+# Project information
+site_name: "VATMEX Standard Operating Procedures"
+site_description: "MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions."
+site_author: "peaceiris"
+site_url: "https://sop.vatmex.com.mx"
+
+# Copyright
+copyright: "For use in the VATSIM Network only. Not intended for use in real life aviation."
+
+# Repository
+repo_name: "GitHub"
+repo_url: "https://github.com/vatmex/vatmex-sop"
+edit_uri: "https://github.com/vatmex/mkdocs-material-boilerplate/edit/main/docs_sample"
+
+# Configuration
+docs_dir: "vatmex"
+theme:
+  name: "material"
+  language: "en"
+  shortcuts:
+    help: 191 # ?
+    next: 78 # n
+    previous: 80 # p
+    search: 83 # s
+  palette:
+    primary: "custom"
+    accent: "custom"
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+  font:
+    text: Ubuntu
+  #code: 'Ubuntu Mono'
+  #icon:
+  logo: 'assets/images/logo.png'
+  favicon: 'assets/images/favicon.ico'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - mdx_math:
+      enable_dollar_delimiter: true
+  - toc:
+      permalink: true
+      separator: "_"
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+
+# Customization
+extra_javascript:
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
+extra_css:
+  - "assets/css/custom.css"
+extra:
+  manifest: "manifest.json"
+  social:
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/vatmex"
